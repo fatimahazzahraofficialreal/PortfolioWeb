@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>My Profile and Portfolio</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="assets/styles/style.css">
+    
+    <!-- Google Fonts Integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/faor.png" type="image/x-icon">
+  </head>
+
+  <body>
+    <header>
+      <div class="jumbotron">
+          <h1 class="site-title">Fatimah Az-Zahra Official Real</h1>
+          <p class="site-tagline">3D Designer and Content Creator</p>
+      </div>
+  
+      <nav class="main-navigation">
+          <ul class="nav-menu">
+              <li class="nav-item">
+                  <a href="#about" class="nav-link">About Me</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#skills" class="nav-link">Skill</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#projects" class="nav-link">Projects</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" id="dropdownBtn">Others</a>
+                  <ul class="dropdown-menu">
+                      <li><a href="#contact" class="dropdown-item">Contact</a></li>
+                      <li><a href="#contact" class="dropdown-item">Social Media</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </nav>
+  </header>  
+    
+    <main>
+      <!-- Konten artikel -->
+      <div id="content">
+        <!-- Tentang Saya -->
+        <article id="about" class="card">
+            <h2>About Me</h2>
+            <img src="assets/images/two.png" alt="profil" class="featured-image" />
+            <p>
+              I am a 3D Designer and Content Creator who has a special interest in 3D modeling. In addition, I am also active in creating creative content through online platforms.
+            </p>
+    
+            <p>
+              My motto is "Create to Inspire, Innovate to Impress". As a 3D Designer and Content Creator, I am committed to creating designs that inspire people to be more enthusiastic in their lives. And besides creating, I also try to continue to innovate so that every content I create is able to make an impressive impression on my audience.
+            </p>
+        </article>
+    
+        <!-- Keahlian -->
+        <article id="skills" class="card">
+            <h2>Skills</h2>
+            <img src="assets/images/skills.png" alt="keahlian" class="featured-image" />
+            <p>
+              I have mastered a variety of technologies and tools that support the creative and development process. Here are some of my key skills:
+            </p>
+    
+            <ul>
+                <li>3D Modelling (Blender)</li>
+                <li>Video Editing (Capcut)</li>
+            </ul>
+        </article>
+    
+        <!-- Proyek -->
+        <article id="projects" class="card">
+            <h2>Projects</h2>
+            <p>
+              Below are some of the projects I have worked on that reflect my expertise and creativity in various fields.
+            </p>
+    
+            <section>
+                <h3>3D Design Assets</h3>
+                <img src="assets/images/four.jpg" alt="desain aplikasi mobile" class="featured-image" />
+                <p>
+                  This is a 3D modeling project featuring a skateboard model with a minimalist design and high precision. The skateboard shape looks clean with a reflective or semi-transparent surface material, giving it a modern and futuristic feel. The skateboard wheels look simple but well-proportioned, with clear shadows on the surface, adding depth and realism to this 3D composition.
+                </p>
+            </section>
+    
+            <section>
+                <h3>Youtube Content</h3>
+                <img src="assets/images/capture.PNG" alt="website portofolio fotografi" class="featured-image" />
+                <p>
+                  This project features a series of YouTube videos created by me, focusing on famous characters from popular manga such as Saitama from One Punch Man, Monkey D. Luffy from One Piece, Naruto Uzumaki from Naruto, and Hisone Amakasu from Hisone to Maso-tan. These videos explore the theme of "Top Role Model" for each character, highlighting their inspiring qualities that make them role models for many fans.
+                </p>
+
+                <p>
+                  Each thumbnail features an eye-catching visual with a distinctive image of the main character, paired with text that outlines the main topic. This project demonstrates the creators’ commitment to providing educational and entertaining content, while also inviting viewers to understand the deeper side of each fictional character. The video lengths vary from around 1 to 2 minutes, which is ideal for capturing the attention of viewers in a short but informative way.
+                </p>
+            </section>
+        </article>
+    </div>
+    
+
+      <!-- Konten samping -->
+      <aside>
+        <div id="contact"></div>
+        <article class="profile card">
+          <header>
+          <h2>Contact</h2>
+          <p>Fatimah Az-Zahra Official Real</p>
+          <figure>
+            <img src="assets/images/five.png" />
+          </figure>
+        </header>
+
+        <section>
+          <div id="contact"></div>
+          <table>
+            <tr>
+              <th>Whatsapp</th>
+              <td>087818436987</td>
+            </tr>
+            <tr>
+              <th>Instagram</th>
+              <td><a href="https://www.instagram.com/fatimahazzahraofficialreal/" class="custom-link">click here</a></td>
+            </tr>
+          </table>
+        </section>
+        </article>
+      </aside>
+    </main>
+
+    <footer>
+      <p>fatimahazzahraofficialreal &#169; 2024</p>
+    </footer>
+
+    <!-- Javascript Dropdown Menu -->
+    <script>
+      const dropdownBtn = document.getElementById('dropdownBtn');
+    
+      const dropdownMenu = document.querySelector('.dropdown-menu');
+    
+      dropdownBtn.addEventListener('click', function (event) {
+        event.preventDefault(); 
+    
+        dropdownMenu.classList.toggle('show');
+      });
+    
+      window.addEventListener('click', function (event) {
+        if (!dropdownBtn.contains(event.target)) {
+          dropdownMenu.classList.remove('show');
+        }
+      });
+    </script>
+    
+  </body>
+</html>
